@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lutfiya Umami</title>
+    <meta name="description" content="Portfolio of a designer who also works in data and development: selected projects, design work, experience, skills and certifications." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Public+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="progress"><span class="progress__bar" id="progress"></span></div>
+      <div class="nav__bar">
+        <div class="wrap nav__inner">
+          <a class="brand" href="#top">
+            <span class="brand__mark">LU</span>
+            <span class="brand__name">Lutfiya Umami</span>
+          </a>
+          <nav class="nav__links">
+            <a class="nav__link" href="#work">Projects</a>
+            <a class="nav__link" href="#experience">Experience</a>
+            <a class="nav__link" href="#skills">Skills</a>
+            <a class="nav__cta" href="#contact">Contact Me</a>
+          </nav>
+          <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <nav class="nav__mobile" id="mobile-links" hidden>
+          <a href="#work">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>          
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section id="top" class="hero">
+        <div class="wrap hero__grid">
+          <div>
+            <div class="hero__fig" id="hero-fig">
+              <img class="hero__img" src="ak.jpeg" alt="Abstract chrome and glass structure representing design, data and code" />
+              <div class="hero__overlay" aria-hidden="true">
+                <span class="hero__cross hero__cross--v" id="cross-x"></span>
+                <span class="hero__cross hero__cross--h" id="cross-y"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__text">
+            <div class="tag-row">
+            <div>
+              <h1 class="hero__h1">
+                <span>I'M</span>
+                <span class="hero__h1-accent">Lutfiya Umami</span>
+              </h1>
+              <p class="lead">Analytical 5th Semester IT student at Jakarta State University specializing in UI/UX Design and User Research. Experienced in translating user requirements into intuitive, visually appealing, and functional digital interfaces using Figma, wireframing, and interactive prototyping. Driven by Design Thinking principles to solve complex usability challenges and build seamless digital product experiences.</p>
+              <div class="hero__actions">
+                <a class="btn btn--solid" href="#work">See More <span>&rarr;</span></a>
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="work" class="section">
+        <div class="wrap">
+          <header class="shead reveal">
+            <div class="shead__row"><span class="shead__index">01</span><span class="shead__label">Projects</span></div>
+            <div class="shead__rule"></div>
+            <h2 class="shead__title">Projects</h2>
+          <div class="projects" id="projects"></div>
+        </div>
+      </section>
+
+    
+      <!-- Experience -->
+      <section id="experience" class="section">
+        <div class="wrap">
+          <header class="shead reveal">
+            <div class="shead__row"><span class="shead__index">04</span><span class="shead__label">Experience</span></div>
+            <div class="shead__rule"></div>
+            <h2 class="shead__title">My Experience</h2>
+          </header>
+          <div class="timeline" id="timeline"></div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <div class="wrap">
+          <header class="shead reveal">
+            <div class="shead__rule"></div>
+            <h2 class="shead__title">What I actually use, and where.</h2>
+            <p class="shead__intro">Larger type means more of my week. Hover or tap any skill to see the work it came from.</p>
+          </header>
+          <div class="skills reveal">
+            <div class="skills__panel">
+              <div>
+                <span class="mono">Selected skill</span>
+                <p class="skills__name" id="skill-name">Figma</p>
+              </div>
+            </div>
+            <div class="skills__list" id="skills-list"></div>
+          </div>
+        </div>
+      </section>
+          <div class="certs" id="certs"></div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <div class="wrap">
+          <header class="shead reveal">
+            <div class="shead__row"><span class="shead__index">06</span><span class="shead__label">Contact</span></div>
+            <div class="shead__rule"></div>
+            <h2 class="shead__title">Let's Work Together</h2>
+          </header>
+
+          <div class="contact__grid">
+            <div class="reveal">
+              <div id="sent-panel" class="sent" hidden>
+                <span class="sent__icon">&#10003;</span>
+                <h3>Your email app is open.</h3>
+                <p>The message is ready to send — press send in your mail app. If nothing opened, write to <a id="sent-mail" href="mailto:lutfiyaumami1@gmail.com">lutfiyaumami1@gmail.com</a> directly.</p>
+                <button class="btn btn--ghost" type="button" id="send-another">Write another message <span>&rarr;</span></button>
+              </div>
+
+              <form id="contact-form" novalidate>
+                <p class="contact__text">
+                  Hi I'm
+                  <input class="field-inline field-inline--sm" aria-label="Your name" name="name" placeholder="your name" />
+                  I really love your portfolio and would like to talk about
+                  <select class="field-inline" aria-label="Topic" name="topic">
+                     <option value="">select one</option>
+                     <option value="A Project">a project</option>
+                     <option value="A Role">a role</option>
+                     <option value="A Collaboration">a collaboration</option>
+                  </select>.
+                   You can reach me back at
+                  <input class="field-inline field-inline--lg" aria-label="Your email" name="email" placeholder="you@company.com" />.
+                </p>
+                <div>
+                  <label class="mono" for="message">The message</label>
+                  <textarea id="message" name="message" rows="5" placeholder="A little context, a timeline, and what success looks like."></textarea>
+                </div>
+                <p class="form-error" id="form-error" hidden></p>
+                <button class="btn btn--dark" type="submit">Send message <span>&rarr;</span></button>
+              </form>
+            </div>
+
+            <div class="reveal">
+              <div class="direct">
+                <span class="mono">Contact Me</span>
+                <a class="direct__mail" href="mailto:lutfiyaumami1@gmail.com">lutfiyaumami1@gmail.com</a>
+                <a class="direct__phone" href="tel:+62 859-3931-9183">+62 859-3931-9183</a>
+                <div class="direct__block">
+                  <span class="mono">Elsewhere</span>
+                  <ul class="social-list">
+                    <li><a href="https://www.linkedin.com/in/lutfiya-umami-744bb3365?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer">LinkedIn <span>&#8599;</span></a></li>
+                    <li><a href="https://github.com/luthfiahumam-bot" target="_blank" rel="noreferrer">GitHub <span>&#8599;</span></a></li>
+                  </ul>
+                </div>
+                <p class="contact__note">Prefer a call? Mention a couple of times in your message and I'll send an invite.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap">
+        <p class="footer__name">Lutfiya Umami</p>
+        <div class="footer__grid">
+          <div>
+            <span class="mono">Navigate</span>
+            <ul class="footer__list">
+              <li><a href="#work">Projects</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <span class="mono">Elsewhere</span>
+            <ul class="footer__list">
+              <li><a href="https://www.linkedin.com/in/lutfiya-umami-744bb3365?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer">LinkedIn</a></li>
+              <li><a href="https://github.com/luthfiahumam-bot" target="_blank" rel="noreferrer">GitHub</a></li>
+            </ul>
+          </div>
+          <div>
+            <span class="mono">Contact</span>
+            <ul class="footer__list">
+              <li><a href="mailto:lutfiyaumami1@gmail.com">lutfiyaumami1@gmail.com</a></li>
+              <li><a href="tel:+62 859-3931-9183">+62 859-3931-9183</a></li>
+            </ul>
+          </div>
+          <div>
+
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span>&copy; <span id="year">2026</span> Lutfiya Umami</span>
+          <a class="backtop" href="#top">Back to top <span>&uarr;</span></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="modal" hidden>
+      <div class="modal__backdrop" data-close></div>
+      <div class="modal__panel" role="dialog" aria-modal="true">
+        <button class="modal__close" type="button" data-close aria-label="Close">&times;</button>
+        <div class="modal__body" id="modal-body"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
